@@ -94,29 +94,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Helvetica';
-    src: url('Helvetica-Light.eot');
-    src: url('Helvetica-Light.eot?#iefix') format('embedded-opentype'),
-        url('Helvetica-Light.woff2') format('woff2'),
-        url('Helvetica-Light.woff') format('woff'),
-        url('Helvetica-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica';
-    src: url('HelveticaRounded-Bold.eot');
-    src: url('HelveticaRounded-Bold.eot?#iefix') format('embedded-opentype'),
-        url('HelveticaRounded-Bold.woff2') format('woff2'),
-        url('HelveticaRounded-Bold.woff') format('woff'),
-        url('HelveticaRounded-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Helvetica';

@@ -30,6 +30,7 @@ let homeOpac = 1;
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", (e) => {
+    headerMenu.style.top = scrollY + 70 + "px";
     if(scrollY > 570){
         header.style["background-color"] = "var(--white)";
         header.style["box-shadow"] = "0 3px 12px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08)";
@@ -46,7 +47,7 @@ window.addEventListener("scroll", (e) => {
 
 
 
-// hello__btn
+// hello btn
 const Btn = document.querySelectorAll(".btn");
 function create(what, where, className) {
     const item = document.createElement(what);
@@ -69,4 +70,34 @@ Btn.forEach((item) => {
             }, 300)
         })
     })
+})
+
+
+
+
+
+// expertise margin mottom
+const expertise = document.querySelector(".expertise");
+const footer = document.querySelector(".footer");
+
+expertise.style["margin-bottom"] = footer.clientHeight + "px";
+
+
+
+
+
+// header menu
+const headerMenu = document.querySelector(".header__menu_puls");
+let headerMenuBool = true;
+
+BurgerMenu.addEventListener("click", () => {
+    if(headerMenuBool){
+        burgerMenuPuls.style.animation = "headerBurgerMenuPulsOpen ease .3s forwards";
+        headerMenu.style.animation = "headerMenuAnim ease .5s forwards";
+    }
+    else{
+        burgerMenuPuls.style.animation = "headerBurgerMenuPulsClose ease .3s forwards";
+        headerMenu.style.animation = "headerMenuAnimClose ease .5s forwards";
+    }
+    headerMenuBool = !headerMenuBool;
 })

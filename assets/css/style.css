@@ -937,3 +937,55 @@ footer
     color: var(--gray);
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+work page --------------------------------------------------------------------------------------------------------------------------
+*/
+
+.work-header{
+    background-color: var(--white);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+.work-home{
+    background-color: var(--white);
+    padding-top: 200px;
+}
+.work-home__cont{
+    height: auto;
+    flex-direction: column;
+}
+.work-home__subtitle{
+    width: 135px;
+}
+.work-section__title::before,
+.work-section__title::after{
+    width: 39%;
+}
+.work-hello__par{
+    max-width: 70%;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-family: "Proxima Light", Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+.latest__item-transportation{background-image: url(../media/img/workPage/transport.jpg);}
+.latest__item-alumni{background-image: url(../media/img/workPage/alumni.jpg);}
+.latest__item-invitation{background-image: url(../media/img/workPage/invitation.jpg);}
+.latest__item-cards{background-image: url(../media/img/workPage/cards.jpg);}
+.latest__item-fingertip{background-image: url(../media/img/workPage/fingertip.jpg);}
+.latest__item-building{background-image: url(../media/img/workPage/building.jpg);}

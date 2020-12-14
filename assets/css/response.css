@@ -95,7 +95,10 @@
     .latest__item{
         width: 70%;
     }
-    .latest__item-woman{
+    .latest__item-woman,
+    .latest__item-alumni,
+    .latest__item-cards,
+    .latest__item-building{
         margin-top: 40px;
     }
 }
@@ -160,6 +163,14 @@
     }
 }
 @media screen and (max-width: 350px) {
+    .header__logo,
+    .header__burger-menu{
+        transform: scale(.7);
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+    }
     .hello,
     .expertise{
         padding: 50px 0;
@@ -177,6 +188,9 @@
     .latest__item_title,
     .header__link{
         font-size: 1.8rem;
+    }
+    .section__subtitle{
+        line-height: inherit;
     }
     .section__title,
     .hello__par,

@@ -1,0 +1,216 @@
+@media screen and (max-width: 1190px) {
+    .wrapper{
+        width: 93%;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .footer__btn{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .expertise__items{
+        flex-wrap: wrap;
+    }
+    .expertise__item{
+        width: 50%;
+    }
+    .expertise__item:nth-child(2)::after{
+        display: none;
+    }
+    .expertise__item:nth-child(3),
+    .expertise__item:nth-child(4){
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hello,
+    .expertise{
+        padding: 80px 0;
+    }
+    .latest,
+    .logos{
+        padding-bottom: 80px;
+    }
+    .home__title,
+    .section__subtitle,
+    .latest__item_title,
+    .header__link{
+        font-size: 2rem;
+    }
+    .section__title,
+    .hello__par,
+    .latest__item_subtitle,
+    .latest__item_par,
+    .header__item_btn{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1.35rem;
+        height: 60px;
+    }
+    .home__title,
+    .section__subtitle{
+        margin-top: 0px;
+    }
+    .hello__bot,
+    .footer__button_info{
+        margin-top: 40px;
+    }
+    .home__subtitle{
+        width: 130px;
+    }
+    .hello__btn{
+        width: 270px;
+    }
+    .footer__icons{
+        margin: 40px 0;
+    }
+    .latest__item_cont{
+        padding: 20px;
+    }
+    .header__menu_interactive,
+    .footer__info_subtitle{
+        font-size: 10px;
+    }
+    .header__menu_footer .header__menu_footer_title{
+        font-size: 13px;
+    }
+    .header__menu_footer_title,
+    .header__menu_footer .header__menu_footer_icons{
+        margin-bottom: 5px;
+    }
+    .footer__info_subtitle{
+        line-height: 1rem;
+    }
+    .header__menu{
+        padding: 100px 0 40px 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .latest__info{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .latest__item{
+        width: 70%;
+    }
+    .latest__item-woman{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .home__title{
+        width: auto;
+    }
+    .footer__btn{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .expertise__item,
+    .latest__item,
+    .header__menu_footer_icons{
+        width: 100%;
+    }
+    .hello__par{
+        max-width: 100%;
+    }
+    .expertise__item::after{
+        display: none;
+    }
+    .expertise__item:nth-child(2),
+    .footer__button,
+    .header__menu_footer_item{
+        margin-top: 30px;
+    }
+    .footer__cont{
+        flex-wrap: wrap;
+    }
+    .footer__item,
+    .footer__button,
+    .footer__info,
+    .header__menu_footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__menu_footer_icons{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .logos__cont{
+        flex-direction: column;
+    }
+    .logos__item{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .logos__item:first-child{
+        margin-top: 0;
+    }
+    .header__item{
+        margin-top: 10px;
+    }
+    .header__item:first-child{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .hello,
+    .expertise{
+        padding: 50px 0;
+    }
+    .home__title,
+    .latest__item_title{
+        line-height: 2rem;
+    }
+    .latest,
+    .logos{
+        padding-bottom: 50px;
+    }
+    .home__title,
+    .section__subtitle,
+    .latest__item_title,
+    .header__link{
+        font-size: 1.8rem;
+    }
+    .section__title,
+    .hello__par,
+    .latest__item_subtitle,
+    .latest__item_par{
+        font-size: .9rem;
+    }
+    .btn{
+        font-size: 1.2rem;
+        height: 50px;
+    }
+    .home__title,
+    .section__subtitle{
+        margin-top: 0px;
+    }
+    .hello__bot,
+    .footer__button_info,
+    .latest__info{
+        margin-top: 30px;
+    }
+    .home__subtitle{
+        width: 120px;
+    }
+    .hello__btn{
+        width: 250px;
+    }
+    .footer__icons,
+    .latest__item_title{
+        margin: 30px 0;
+    }
+    .latest__item_cont{
+        padding: 20px;
+    }
+    .latest__item_par{
+        margin-bottom: 30px;
+    }
+}

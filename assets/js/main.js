@@ -1,3 +1,18 @@
+// preloader function
+const preloader = document.querySelector(".preloader")
+document.body.onload = () => {
+    preloader.style.opacity = "0";
+    setTimeout(() => {
+        preloader.style.display = "none";
+        document.querySelector(".preloader__cont").style.animation = "none";
+    }, 500);
+}
+
+
+
+
+
+// burger menu events
 const body = document.querySelector("body");
 const logoIcon = document.querySelector(".header__logo_icon");
 const BurgerMenu = document.querySelector(".header__burger-menu");
@@ -25,6 +40,18 @@ logoIcon.addEventListener("mouseleave", () => {
 
 
 
+
+
+
+// expertise margin mottom
+const expertise = document.querySelector(".expertise");
+const footer = document.querySelector(".footer");
+expertise.style["margin-bottom"] = footer.clientHeight + "px";
+
+
+
+
+
 // home
 const headerMenuPuls = document.querySelector(".header__menu_puls");
 const home = document.querySelector(".home");
@@ -42,6 +69,7 @@ window.addEventListener("scroll", (e) => {
         header.style["box-shadow"] = "none";
     }
     home.style.opacity = (home.getBoundingClientRect().height - window.scrollY) / 600;
+    expertise.style["margin-bottom"] = footer.clientHeight + "px";
 })
 
 
@@ -78,23 +106,31 @@ Btn.forEach((item) => {
 
 
 
-// expertise margin mottom
-const expertise = document.querySelector(".expertise");
-const footer = document.querySelector(".footer");
-
-expertise.style["margin-bottom"] = footer.clientHeight + "px";
-
-
-
 
 
 // header menu
 const headerMenu = document.querySelector(".header__menu");
 const headerBurgerMenuName = document.querySelector(".header__burger-menu_name");
 let headerMenuBool = true;
+const burgerMenuLines = document.querySelector(".header__burger-menu_lines");
+const burgerMenuLinesAll = document.querySelectorAll(".header__burger-menu_line");
+const burgerMenuLine1 = document.querySelectorAll(".header__burger-menu_line")[0];
+const burgerMenuLine2 = document.querySelectorAll(".header__burger-menu_line")[1];
+const burgerMenuLine3 = document.querySelectorAll(".header__burger-menu_line")[2];
 
 BurgerMenu.addEventListener("click", () => {
     if (headerMenuBool) {
+        burgerMenuLinesAll.forEach((item) => {
+            item.style.width = "0";
+        })
+        setTimeout(() => {
+            burgerMenuLines.style["justify-content"] = "center";
+            burgerMenuLine1.style.transform = "rotate(45deg)";
+            burgerMenuLine1.style.width = "100%";
+            burgerMenuLine2.style.transform = "rotate(-45deg)";
+            burgerMenuLine2.style.width = "100%";
+        }, 500)
+
         body.style["overflow-y"] = "hidden";
         headerBurgerMenuName.innerHTML = "close";
         burgerMenuPuls.style.animation = "headerBurgerMenuPulsOpen ease .3s forwards";
@@ -111,6 +147,18 @@ BurgerMenu.addEventListener("click", () => {
         }, 500)
     }
     else {
+        burgerMenuLinesAll.forEach((item) => {
+            item.style.width = "0";
+        })
+        setTimeout(() => {
+            burgerMenuLines.style["justify-content"] = "space-between";
+            burgerMenuLine1.style.transform = "rotate(0deg)";
+            burgerMenuLine1.style.width = "100%";
+            burgerMenuLine2.style.transform = "rotate(0deg)";
+            burgerMenuLine3.style.width = "100%";
+            burgerMenuLine2.style.width = "100%";
+        }, 500)
+
         body.style["overflow-y"] = "scroll";
         headerBurgerMenuName.innerHTML = "menu";
         headerMenu.style.opacity = "0";

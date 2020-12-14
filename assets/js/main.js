@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const logoIcon = document.querySelector(".header__logo_icon");
 const BurgerMenu = document.querySelector(".header__burger-menu");
 const burgerMenuPuls = document.querySelector(".header__burger-menu_puls");
@@ -25,17 +26,18 @@ logoIcon.addEventListener("mouseleave", () => {
 
 
 // home
+const headerMenuPuls = document.querySelector(".header__menu_puls");
 const home = document.querySelector(".home");
 let homeOpac = 1;
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", (e) => {
-    headerMenu.style.top = scrollY + 70 + "px";
-    if(scrollY > 570){
+    headerMenuPuls.style.top = scrollY + 50 + "px";
+    if (scrollY > 570) {
         header.style["background-color"] = "var(--white)";
         header.style["box-shadow"] = "0 3px 12px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08)";
     }
-    else{
+    else {
         header.style["background-color"] = "transparent";
         header.style["box-shadow"] = "none";
     }
@@ -87,17 +89,40 @@ expertise.style["margin-bottom"] = footer.clientHeight + "px";
 
 
 // header menu
-const headerMenu = document.querySelector(".header__menu_puls");
+const headerMenu = document.querySelector(".header__menu");
+const headerBurgerMenuName = document.querySelector(".header__burger-menu_name");
 let headerMenuBool = true;
 
 BurgerMenu.addEventListener("click", () => {
-    if(headerMenuBool){
+    if (headerMenuBool) {
+        body.style["overflow-y"] = "hidden";
+        headerBurgerMenuName.innerHTML = "close";
         burgerMenuPuls.style.animation = "headerBurgerMenuPulsOpen ease .3s forwards";
-        headerMenu.style.animation = "headerMenuAnim ease .5s forwards";
+        headerMenuPuls.style.animation = "headerMenuAnim ease .5s forwards";
+        if (scrollY < 570) {
+            header.style["background-color"] = "transparent";
+        }
+        else {
+            header.style["background-color"] = "transparent";
+        }
+        setTimeout(() => {
+            headerMenu.style.opacity = "1";
+            headerMenu.style.visibility = "visible";
+        }, 500)
     }
-    else{
+    else {
+        body.style["overflow-y"] = "scroll";
+        headerBurgerMenuName.innerHTML = "menu";
+        headerMenu.style.opacity = "0";
+        headerMenu.style.visibility = "hidden";
         burgerMenuPuls.style.animation = "headerBurgerMenuPulsClose ease .3s forwards";
-        headerMenu.style.animation = "headerMenuAnimClose ease .5s forwards";
+        headerMenuPuls.style.animation = "headerMenuAnimClose ease .5s forwards";
+        if (scrollY < 570) {
+            header.style["background-color"] = "transparent";
+        }
+        else {
+            header.style["background-color"] = "var(--white)";
+        }
     }
     headerMenuBool = !headerMenuBool;
 })

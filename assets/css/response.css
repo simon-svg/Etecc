@@ -109,6 +109,9 @@
     .footer__btn{
         width: 300px;
     }
+    .work-home{
+        padding-top: 120px;
+    }
 }
 @media screen and (max-width: 550px) {
     .expertise__item,

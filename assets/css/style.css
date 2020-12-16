@@ -8,6 +8,9 @@
     --footer: #120e0f;
     --form: #1e1e1e;
 }
+*::selection{
+    background-color: var(--orange);
+}
 .wrapper{
     width: 1170px;
     margin: 0 auto;
@@ -199,11 +202,11 @@ header
     font-family: 'Helvetica', sans-serif;
     position: absolute;
     opacity: 0;
-    transition: opacity ease .5s width ease .5s;
-    -webkit-transition: opacity ease .5s width ease .5s;
-    -moz-transition: opacity ease .5s width ease .5s;
-    -ms-transition: opacity ease .5s width ease .5s;
-    -o-transition: opacity ease .5s width ease .5s;
+    transition: all ease .5s, width;
+    -webkit-transition: all ease .5s, width;
+    -moz-transition: all ease .5s, width;
+    -ms-transition: all ease .5s, width;
+    -o-transition: all ease .5s, width;
 }
 .header__burger-menu_lines{
     width: 26px;
@@ -451,7 +454,7 @@ body{
     font-family: "Rozha One", serif;
     text-transform: capitalize;
     padding-top: 20px;
-    transition: color 0.2s linear;
+    outline: none;
     cursor: pointer;
     transition: all linear .2s;
     -webkit-transition: all linear .2s;
@@ -1331,4 +1334,19 @@ section form -------------------------------------------------------------------
 }
 .form__preferred_select{
     width: 100%;
+}
+
+
+
+
+
+
+/*
+login page -------------------------------------------------------------------------------------------------------------------------
+*/
+
+.form__btn_small{
+    width: 200px;
+    height: 60px;
+    font-size: 17px;
 }

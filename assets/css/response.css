@@ -7,6 +7,10 @@
     .footer__btn{
         width: 400px;
     }
+    .expertise__subtitle::before,
+    .expertise__subtitle::after{
+        width: 35%;
+    }
 }
 @media screen and (max-width: 1000px) {
     .expertise__items{
@@ -140,6 +144,10 @@
     .work-home{
         padding-top: 120px;
     }
+    .expertise__subtitle::before,
+    .expertise__subtitle::after{
+        width: 29%;
+    }
 }
 @media screen and (max-width: 550px) {
     .expertise__item,
@@ -204,6 +212,16 @@
     .header__item:first-child{
         margin-top: 0px;
     }
+    .expertise__info{
+        margin-top: 40px;
+    }
+    .expertise__top{
+        width: 220px;
+    }
+    .expertise__subtitle::before,
+    .expertise__subtitle::after{
+        width: 25%;
+    }
 
     .capabilities__item{
         padding: 0;
@@ -218,6 +236,12 @@
     }
     .section__form{
         padding: 40px 0;
+    }
+
+    .form__btn_small,
+    .login__btn,
+    .form__btns{
+        width: 100%;
     }
 }
 @media screen and (max-width: 350px) {
@@ -255,6 +279,9 @@
     .latest__item_subtitle,
     .latest__item_par{
         font-size: .9rem;
+    }
+    .expertise__item{
+        padding: 0;
     }
     .btn{
         font-size: 1.2rem;

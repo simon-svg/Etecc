@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="..//media/img/homePage/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="..//media/fonts/fonts.css">
@@ -58,7 +58,7 @@
                                 <a class="header__link" href="../../index.html">home</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#">work</a>
+                                <a class="header__link" href="../html/work.html">work</a>
                             </li>
                             <li class="header__item">
                                 <a class="header__link" href="../html/services.html">services</a>
@@ -70,11 +70,9 @@
                                 <a class="header__link" href="../html/contact.html">contact</a>
                             </li>
                             <li class="header__item">
-                                <a href="./login.html">
-                                    <button class="header__item_btn"><i class="header__item_lock fas fa-lock"></i>
-                                        customer login
-                                    </button>
-                                </a>
+                                <button class="header__item_btn"><i class="header__item_lock fas fa-lock"></i>
+                                    customer login
+                                </button>
                             </li>
                         </ul>
                     </nav>
@@ -116,135 +114,41 @@
             <section class="work-home">
                 <div class="wrapper">
                     <div class="work-home__cont home__cont flex">
-                        <h3 class="work-home__subtitle home__subtitle">
-                            <img class="home__subtitle_img" src="../media/img/workPage/search.svg" alt="subtitle">
-                        </h3>
                         <div class="section__cont flex">
                             <div class="section__top">
-                                <h3 class="work-section__title section__title">case studies</h3>
-                                <h2 class="section__subtitle">View selected case studies<span class="orange">.</span>
+                                <h3 class="work-section__title section__title">admin access</h3>
+                                <h2 class="section__subtitle">Client Login<span class="orange">.</span>
                                 </h2>
                             </div>
                             <div class="hello__info">
-                                <p class="work-hello__par">Case studies outlining a detailed overview of how eTecc
-                                    engages projects of all different sizes and technologies are shown below.</p>
+                                <p class="work-hello__par">Our client administration area allows you to make a changes
+                                    to your billing or contact information, and manage your payments.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="latest">
+            <section class="section__form">
                 <div class="wrapper">
-                    <div class="sections__cont latest__cont flex">
-                        <div class="latest__info flex">
-                            <div class="latest__item latest__item-phone">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Real Time Threat Mitigation Suite<span
-                                            class="orange">.</span></h2>
-                                    <p class="latest__item_par">Mobile powered interactive firewall plugin</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">View Project</span>
-                                    </a>
-                                </div>
+                    <div class="section__form_cont">
+                        <form class="form flex" action="#">
+                            <div class="form__info">
+                                <input class="form__input" type="email" name="email" placeholder="Email Address">
+                                <input class="form__input" type="password" name="password" placeholder="Enter Password">
                             </div>
-                            <div class="latest__item latest__item-woman">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">A Home For Your Skin<span class="orange">.</span>
-                                    </h2>
-                                    <p class="latest__item_par">Custom website design & development</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">Discover More</span>
-                                    </a>
-                                </div>
+                            <button class="btn form__btn login__btn">
+                                <span class="btn__span">client sign in</span>
+                            </button>
+                            <div class="form__btns">
+                                <button class="btn form__btn form__btn_small">
+                                    <span class="btn__span">forgot password?</span>
+                                </button>
+                                <button class="btn form__btn form__btn_small">
+                                    <span class="btn__span">need an account?</span>
+                                </button>
                             </div>
-                        </div>
-                        <div class="latest__info flex">
-                            <div class="latest__item latest__item-transportation">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Transportation You Can Trust<span
-                                            class="orange">.</span></h2>
-                                    <p class="latest__item_par">Brand-focused custom website design & development</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">View Project</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="latest__item latest__item-alumni">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Work with the alumni<span class="orange">.</span>
-                                    </h2>
-                                    <p class="latest__item_par">Comprehensive business consulting</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">Discover More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="latest__info flex">
-                            <div class="latest__item latest__item-invitation">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Invitations made easy<span class="orange">.</span>
-                                    </h2>
-                                    <p class="latest__item_par">Creating invites in iMessage is simple, quick & hassle
-                                        free</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">View Project</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="latest__item latest__item-cards">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Cards from analog to digital<span
-                                            class="orange">.</span>
-                                    </h2>
-                                    <p class="latest__item_par">NGC exclusively serving the B2B, rewards and incentive
-                                        marketplace</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">Discover More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="latest__info flex">
-                            <div class="latest__item latest__item-fingertip">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Automotive claims at your fingertips<span
-                                            class="orange">.</span></h2>
-                                    <p class="latest__item_par">A vehicle appearance protection insurance tool formatted
-                                        for a mobile audience</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">View Project</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="latest__item latest__item-building">
-                                <div class="latest__item_cont">
-                                    <h3 class="latest__item_subtitle orange">case study</h3>
-                                    <h2 class="latest__item_title">Building a brand from technology<span
-                                            class="orange">.</span>
-                                    </h2>
-                                    <p class="latest__item_par">Node 110 is a brand new cloud hosting company</p>
-                                    <a class="btn latest__btn flex" href="#">
-                                        <i class="hello__icon fas fa-arrow-right"></i>
-                                        <span class="btn__span">Discover More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -322,7 +226,8 @@
                         </div>
                     </div>
                     <div class="footer__button flex">
-                        <button class="btn footer__btn"><i class="footer__btn_icon fas fa-arrow-right"></i>
+                        <button class="btn footer__btn">
+                            <i class="footer__btn_icon fas fa-arrow-right"></i>
                             <span class="btn__span">Start Your Project</span>
                         </button>
                         <div class="footer__button_info">

@@ -31,18 +31,18 @@ let homeOpac = 1;
 window.addEventListener("scroll", (e) => {
     headerMenuPuls.style.top = scrollY + 50 + "px";
     if (scrollY > 570) {
-        if (document.title === "ETECC") {
+        if (document.title === "Etecc") {
             header.style["background-color"] = "var(--white)";
             header.style["box-shadow"] = "0 3px 12px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08)";
         }
     }
     else {
-        if (document.title === "ETECC") {
+        if (document.title === "Etecc") {
             header.style["background-color"] = "transparent";
             header.style["box-shadow"] = "none";
         }
     }
-    if (document.title === "ETECC") {
+    if (document.title === "Etecc") {
         home.style.opacity = (home.getBoundingClientRect().height - window.scrollY) / 600;
     }
     expertise.style["margin-bottom"] = footer.clientHeight + "px";
@@ -177,7 +177,7 @@ BurgerMenu.addEventListener("click", () => {
         else {
             header.style["background-color"] = "var(--white)";
         }
-        if(document.title !== "ETECC"){
+        if(document.title !== "Etecc"){
             header.style["background-color"] = "var(--white)";
         }
     }

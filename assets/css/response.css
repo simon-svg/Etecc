@@ -103,6 +103,17 @@
     .header__menu{
         padding: 100px 0 40px 0;
     }
+
+    .form,
+    .form__input-50{
+        width: 100%;
+    }
+    .form__info_for-50{
+        flex-direction: column;
+    }
+    .form__input-50:last-child{
+        margin-top: 12px;
+    }
 }
 @media screen and (max-width: 750px) {
     .latest__info{
@@ -205,6 +216,9 @@
     .capabilities__item_subtitle{
         text-align: center;
     }
+    .section__form{
+        padding: 40px 0;
+    }
 }
 @media screen and (max-width: 350px) {
     .header__logo,
@@ -258,8 +272,10 @@
     .home__subtitle{
         width: 120px;
     }
-    .hello__btn{
-        width: 250px;
+    .hello__bot,
+    .hello__btn,
+    .form__btn{
+        width: 100%;
     }
     .footer__icons,
     .latest__item_title{

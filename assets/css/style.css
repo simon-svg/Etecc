@@ -6,6 +6,7 @@
     --gray: #a49b9e;
     --expertise: #1a1718;
     --footer: #120e0f;
+    --form: #1e1e1e;
 }
 .wrapper{
     width: 1170px;
@@ -650,6 +651,7 @@ hello
     position: relative;
     overflow: hidden;
     outline: none;
+    cursor: pointer;
     transition: all .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition: all .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -moz-transition: all .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -668,14 +670,17 @@ hello
     -ms-transition: color ease .1s;
     -o-transition: color ease .1s;
 }
-.hello__btn{
+.hello__btn,
+.form__btn{
     width: 300px;
     margin-top: 20px;
 }
 .hello__btn:hover .hello__icon,
 .hello__btn:hover .btn__span,
 .journal__btn:hover .hello__icon,
-.journal__btn:hover .btn__span{
+.journal__btn:hover .btn__span,
+.form__btn:hover .hello__icon,
+.form__btn:hover .btn__span{
     color: var(--white);
 }
 .hello__icon{
@@ -1173,6 +1178,7 @@ journal ------------------------------------------------------------------------
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 .journal__item_title{
     color: var(--white);
@@ -1195,4 +1201,134 @@ journal ------------------------------------------------------------------------
     width: 300px;
     margin-top: 30px;
     cursor: pointer;
+}
+
+
+
+
+
+
+/*
+section form -----------------------------------------------------------------------------------------------------------------------
+*/
+
+.section__form{
+    width: 100%;
+    padding: 80px 0;
+}
+.form{
+    width: 65%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.form__info,
+.form__budget,
+.form__preferred{
+    width: 100%;
+}
+.form__input{
+    width: 100%;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 20px 14px 20px 24px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    font-size: 16px;
+    color: var(--form);
+    font-family: Helvetica, sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f8f8f8;
+    transition: background-color 0.3s linear, border 0.3s linear;
+    -webkit-transition: background-color 0.3s linear, border 0.3s linear;
+    -moz-transition: background-color 0.3s linear, border 0.3s linear;
+    -ms-transition: background-color 0.3s linear, border 0.3s linear;
+    -o-transition: background-color 0.3s linear, border 0.3s linear;
+}
+.form__input:focus{
+    background-color: var(--white);
+}
+.form__info_for-50{
+    margin-bottom: 12px;
+}
+.form__input-50{
+    width: 49%;
+    position: relative;
+}
+.form__input_last,
+.form__input-50,
+.form__select{
+    margin-bottom: 0;
+}
+.form__budget,
+.form__preferred{
+    margin-top: 40px;
+}
+.form__title{
+    color: var(--form);
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.form__input-for-select:hover .input__icon{
+    color: var(--orange);
+}
+.input__icon{
+    color: var(--black);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(calc(-50% - 3px));
+    -webkit-transform: translateY(calc(-50% - 3px));
+    -moz-transform: translateY(calc(-50% - 3px));
+    -ms-transform: translateY(calc(-50% - 3px));
+    -o-transform: translateY(calc(-50% - 3px));
+}
+.form__chackboxs_cont{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.form__chackboxs{
+    width: 50%;
+}
+.form__chackbox{
+    width: 100%;
+    cursor: pointer;
+}
+.form__chackbox:last-child{
+    margin-top: 20px;
+}
+.form__chackbox_indikator{
+    height: 20px;
+    width: 20px;
+    background: #f8f8f8;
+    border: 1px solid #999;
+    justify-content: center;
+    transition: all 0.6s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.form__chackbox_indikator_active{
+    background-color: var(--orange);
+    border: 1px solid var(--black);
+}
+.form__chackbox_info{
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    color: var(--form);
+    padding-left: 12px;
+    font-size: 16px;
+}
+.form__chackbox_icon{
+    color: var(--white);
+    font-size: 10px;
+    display: none;
+}
+.form__text{
+    padding-bottom: 100px;
+    margin-bottom: 40px;
+}
+.form__preferred_select{
+    width: 100%;
 }

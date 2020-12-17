@@ -1350,3 +1350,54 @@ login page ---------------------------------------------------------------------
     height: 60px;
     font-size: 17px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+starters page -----------------------------------------------------------------------------------------------------------------------
+*/
+
+.position{
+    margin-bottom: 80px;
+}
+.starter-home__subtitle{
+    width: 189px;
+}
+.position__cont{
+    width: 100%;
+    background-color: var(--expertise);
+    padding: 20px;
+}
+.position__inner{
+    width: 100%;
+    border: 2px solid var(--orange);
+    padding: 20px;
+    flex-direction: column;
+}
+.position__title{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+}
+.position__link,
+.position__par{
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.position__par{
+    width: 70%;
+    color: var(--white);
+    text-align: center;
+}
